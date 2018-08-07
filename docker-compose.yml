@@ -1,0 +1,10 @@
+version: "3"
+services:
+  clickhouse-server:
+    image: "yandex/clickhouse-server"
+    ports:
+      - "8223:8123"
+
+  clickhouse-client:
+    image: "yandex/clickhouse-client"
+    restart: "no"
